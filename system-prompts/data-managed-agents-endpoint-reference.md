@@ -1,7 +1,7 @@
 <!--
 name: 'Data: Managed Agents endpoint reference'
 description: Comprehensive reference for Managed Agents API endpoints, SDK methods, request/response schemas, error handling, and rate limits
-ccVersion: 2.1.132
+ccVersion: 2.1.144
 -->
 # Managed Agents — Endpoint Reference
 
@@ -43,7 +43,7 @@ All resources are under the `beta` namespace. Python and TypeScript share identi
 
 **Agent shorthand:** `agent` on session create accepts either a bare string (`agent="agent_abc123"` — uses latest version) or the full reference object (`{type: "agent", id: "agent_abc123", version: 123}`).
 
-**Model shorthand:** `model` on agent create accepts either a bare string (`model="{{OPUS_ID}}"` — uses `standard` speed) or the full config object (`{type: "model_config", id: "claude-opus-4-6", speed: "fast"}`). Note: `speed: "fast"` is only supported on Opus 4.6.
+**Model shorthand:** `model` on agent create accepts either a bare string (`model="{{OPUS_ID}}"` — uses `standard` speed) or the full config object (`{id: "claude-opus-4-6", speed: "fast"}`). Note: `speed: "fast"` is only supported on Opus 4.6.
 
 ---
 
